@@ -1,4 +1,4 @@
-{% set version = '1.3.0' %}
+{% set version = "1.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gtsummary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gtsummary/gtsummary_{{ version }}.tar.gz
-  sha256: a76907d038a408870f75098004a12f1d1349485df2b916a73a0cfcf6f7bf9d3f
+  sha256: 8b5ffcd6b607281b63da990aa0c1d7b08612f1781d8125da866d83e73c8c5c4f
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -72,16 +72,11 @@ test:
 about:
   home: https://github.com/ddsjoberg/gtsummary, http://www.danieldsjoberg.com/gtsummary/
   license: MIT
-  summary: Creates presentation-ready tables summarizing data sets, regression models, and more.
-    The code to create the tables is concise and highly customizable. Data frames can
-    be summarized with any function, e.g. mean(), median(), even user-written functions.
-    Regression models are summarized and include the reference rows for categorical
-    variables. Common regression models, such as logistic regression and Cox proportional
-    hazards regression, are automatically identified and the tables are pre-filled with
-    appropriate column headers.
+  summary: Creates presentation-ready tables summarizing data sets, regression models, and more. The code to create the tables is concise and highly customizable. Data frames can be summarized with any function, e.g. mean(), median(), even user-written functions. Regression models are summarized and include the reference
+    rows for categorical variables. Common regression models, such as logistic regression and Cox proportional hazards regression, are automatically identified and the tables are pre-filled with appropriate column headers.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
