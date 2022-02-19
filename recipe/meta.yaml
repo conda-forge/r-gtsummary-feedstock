@@ -39,7 +39,7 @@ requirements:
     - r-stringr >=1.4.0
     - r-tibble >=3.1.6
     - r-tidyr >=1.1.4
-   run:
+  run:
     - r-base
     - r-broom >=0.7.11
     - r-broom.helpers >=1.6.0
