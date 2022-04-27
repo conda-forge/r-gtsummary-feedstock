@@ -57,9 +57,13 @@ requirements:
     - r-tidyr >=1.1.4
 
 test:
+  requires:
+    - r-testthat
   commands:
-    - $R -e "library('gtsummary')"           # [not win]
-    - "\"%R%\" -e \"library('gtsummary')\""  # [win]
+    - $R -e "library('gtsummary')"                          # [not win]
+    - $R -e "testthat::test_package('gtsummary')"           # [not win]
+    - "\"%R%\" -e \"library('gtsummary')\""                 # [win]
+    - "\"%R%\" -e \"testthat::test_package('gtsummary')\""  # [win]
 
 about:
   home: https://github.com/ddsjoberg/gtsummary, http://www.danieldsjoberg.com/gtsummary/
