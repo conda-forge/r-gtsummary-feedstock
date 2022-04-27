@@ -59,6 +59,8 @@ requirements:
 test:
   requires:
     - r-testthat
+    - r-ggally
+    - r-openxlsx
   commands:
     - $R -e "library('gtsummary')"                          # [not win]
     - $R -e "testthat::test_package('gtsummary')"           # [not win]
