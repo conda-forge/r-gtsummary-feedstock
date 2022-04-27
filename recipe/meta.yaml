@@ -59,7 +59,8 @@ requirements:
 test:
   requires:
     - r-testthat
-    - r-ggally
+    - r-ggally >=2.1.0
+    - r-huxtable >=5.4.0
     - r-openxlsx
   commands:
     - $R -e "library('gtsummary')"                          # [not win]
