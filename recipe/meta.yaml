@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -25,13 +25,13 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-broom >=0.7.11
-    - r-broom.helpers >=1.6.0
+    - r-broom >=0.8.0
+    - r-broom.helpers >=1.7.0
     - r-cli >=3.1.1
     - r-dplyr >=1.0.7
     - r-forcats >=0.5.1
     - r-glue >=1.6.0
-    - r-gt >=0.3.1
+    - r-gt >=0.5.0
     - r-knitr >=1.37
     - r-lifecycle >=1.0.1
     - r-purrr >=0.3.4
@@ -41,13 +41,13 @@ requirements:
     - r-tidyr >=1.1.4
   run:
     - r-base
-    - r-broom >=0.7.11
-    - r-broom.helpers >=1.6.0
+    - r-broom >=0.8.0
+    - r-broom.helpers >=1.7.0
     - r-cli >=3.1.1
     - r-dplyr >=1.0.7
     - r-forcats >=0.5.1
     - r-glue >=1.6.0
-    - r-gt >=0.3.1
+    - r-gt >=0.5.0
     - r-knitr >=1.37
     - r-lifecycle >=1.0.1
     - r-purrr >=0.3.4
@@ -57,9 +57,16 @@ requirements:
     - r-tidyr >=1.1.4
 
 test:
+  requires:
+    - r-testthat
+    - r-ggally >=2.1.0
+    - r-huxtable >=5.4.0
+    - r-openxlsx
   commands:
-    - $R -e "library('gtsummary')"           # [not win]
-    - "\"%R%\" -e \"library('gtsummary')\""  # [win]
+    - $R -e "library('gtsummary')"                          # [not win]
+    - $R -e "testthat::test_package('gtsummary')"           # [not win]
+    - "\"%R%\" -e \"library('gtsummary')\""                 # [win]
+    - "\"%R%\" -e \"testthat::test_package('gtsummary')\""  # [win]
 
 about:
   home: https://github.com/ddsjoberg/gtsummary, http://www.danieldsjoberg.com/gtsummary/
