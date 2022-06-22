@@ -1,4 +1,4 @@
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gtsummary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gtsummary/gtsummary_{{ version }}.tar.gz
-  sha256: dffd452c42f1b4b78a55af87bafab35d353f99a748ce84597516484dc2038753
+  sha256: fe04caf79826ecf4fd9da0ef5d4705775a15bf18a7d508a53492a086798ce35c
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -31,7 +31,7 @@ requirements:
     - r-dplyr >=1.0.7
     - r-forcats >=0.5.1
     - r-glue >=1.6.0
-    - r-gt >=0.5.0
+    - r-gt >=0.6.0
     - r-knitr >=1.37
     - r-lifecycle >=1.0.1
     - r-purrr >=0.3.4
@@ -47,7 +47,7 @@ requirements:
     - r-dplyr >=1.0.7
     - r-forcats >=0.5.1
     - r-glue >=1.6.0
-    - r-gt >=0.5.0
+    - r-gt >=0.6.0
     - r-knitr >=1.37
     - r-lifecycle >=1.0.1
     - r-purrr >=0.3.4
