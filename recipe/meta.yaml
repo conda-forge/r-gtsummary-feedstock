@@ -59,6 +59,7 @@ requirements:
 test:
   requires:
     - r-testthat
+    - r-ggstats
     - r-huxtable >=5.4.0
     - r-openxlsx
   commands:
