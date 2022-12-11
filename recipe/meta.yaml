@@ -25,13 +25,13 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-broom >=0.8.0
-    - r-broom.helpers >=1.9.0
+    - r-broom >=1.0.1
+    - r-broom.helpers >=1.10.0
     - r-cli >=3.1.1
     - r-dplyr >=1.0.7
     - r-forcats >=0.5.1
     - r-glue >=1.6.0
-    - r-gt >=0.7.0
+    - r-gt >=0.8.0
     - r-knitr >=1.37
     - r-lifecycle >=1.0.1
     - r-purrr >=0.3.4
@@ -41,13 +41,13 @@ requirements:
     - r-tidyr >=1.1.4
   run:
     - r-base
-    - r-broom >=0.8.0
-    - r-broom.helpers >=1.9.0
+    - r-broom >=1.0.1
+    - r-broom.helpers >=1.10.0
     - r-cli >=3.1.1
     - r-dplyr >=1.0.7
     - r-forcats >=0.5.1
     - r-glue >=1.6.0
-    - r-gt >=0.7.0
+    - r-gt >=0.8.0
     - r-knitr >=1.37
     - r-lifecycle >=1.0.1
     - r-purrr >=0.3.4
@@ -59,7 +59,6 @@ requirements:
 test:
   requires:
     - r-testthat
-    - r-ggally >=2.1.0
     - r-huxtable >=5.4.0
     - r-openxlsx
   commands:
@@ -69,7 +68,9 @@ test:
     - "\"%R%\" -e \"testthat::test_package('gtsummary')\""  # [win]
 
 about:
-  home: https://github.com/ddsjoberg/gtsummary, http://www.danieldsjoberg.com/gtsummary/
+  home: https://www.danieldsjoberg.com/gtsummary/
+  dev_url: https://github.com/ddsjoberg/gtsummary
+  doc_url: https://www.danieldsjoberg.com/gtsummary/reference/
   license: MIT
   summary: Creates presentation-ready tables summarizing data sets, regression models, and more. The code to create the tables is concise and highly customizable. Data frames can be summarized with any function, e.g. mean(), median(), even user-written functions. Regression models are summarized and include the reference
     rows for categorical variables. Common regression models, such as logistic regression and Cox proportional hazards regression, are automatically identified and the tables are pre-filled with appropriate column headers.
