@@ -1,11 +1,11 @@
-About r-gtsummary
-=================
+About r-gtsummary-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gtsummary-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.danieldsjoberg.com/gtsummary/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gtsummary-feedstock/blob/main/LICENSE.txt)
 
 Summary: Creates presentation-ready tables summarizing data sets, regression models, and more. The code to create the tables is concise and highly customizable. Data frames can be summarized with any function, e.g. mean(), median(), even user-written functions. Regression models are summarized and include the reference rows for categorical variables. Common regression models, such as logistic regression and Cox proportional hazards regression, are automatically identified and the tables are pre-filled with appropriate column headers.
 
