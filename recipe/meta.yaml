@@ -26,40 +26,42 @@ requirements:
   host:
     - r-base
     - r-broom >=1.0.1
-    - r-broom.helpers >=1.10.0
+    - r-broom.helpers >=1.12.0
     - r-cli >=3.1.1
-    - r-dplyr >=1.0.7
-    - r-forcats >=0.5.1
-    - r-glue >=1.6.0
-    - r-gt >=0.8.0
+    - r-dplyr >=1.1.1
+    - r-forcats >=1.0.0
+    - r-glue >=1.6.2
+    - r-gt >=0.9.0
     - r-knitr >=1.37
     - r-lifecycle >=1.0.1
     - r-purrr >=0.3.4
     - r-rlang >=1.0.3
     - r-stringr >=1.4.0
-    - r-tibble >=3.1.6
+    - r-tibble >=3.2.1
     - r-tidyr >=1.1.4
+    - r-vctrs >=0.5.2
   run:
     - r-base
     - r-broom >=1.0.1
-    - r-broom.helpers >=1.10.0
+    - r-broom.helpers >=1.12.0
     - r-cli >=3.1.1
-    - r-dplyr >=1.0.7
-    - r-forcats >=0.5.1
-    - r-glue >=1.6.0
-    - r-gt >=0.8.0
+    - r-dplyr >=1.1.1
+    - r-forcats >=1.0.0
+    - r-glue >=1.6.2
+    - r-gt >=0.9.0
     - r-knitr >=1.37
     - r-lifecycle >=1.0.1
     - r-purrr >=0.3.4
     - r-rlang >=1.0.3
     - r-stringr >=1.4.0
-    - r-tibble >=3.1.6
+    - r-tibble >=3.2.1
     - r-tidyr >=1.1.4
+    - r-vctrs >=0.5.2
 
 test:
   requires:
-    - r-testthat
-    - r-ggstats
+    - r-testthat >=3.0.4
+    - r-ggstats >=0.2.1
     - r-huxtable >=5.4.0
     - r-openxlsx
   commands:
@@ -83,4 +85,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - mfansler
