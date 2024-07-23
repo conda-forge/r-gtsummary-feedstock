@@ -1,4 +1,4 @@
-{% set version = "1.7.2" %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gtsummary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gtsummary/gtsummary_{{ version }}.tar.gz
-  sha256: ddc225f1c3a629b47bce85b64229d2a99c46c7bf22b88a6bb6cc728e76d34b0a
+  sha256: 62bc4dd59ef6007a8e7288a62ba2783e5d1a76dd61e48c5ae65b0844eda6e375
 
 build:
   merge_build_host: true  # [win]
