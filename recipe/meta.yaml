@@ -50,9 +50,11 @@ requirements:
 test:
   requires:
     - r-testthat >=3.2.0
+    - r-huxtable >=5.4.0
     - r-broom >= 1.0.5
     - r-broom.helpers >=1.15.0
     - r-survival
+    - r-cardx
   commands:
     - $R -e "library('gtsummary')"                          # [not win]
     - $R -e "testthat::test_package('gtsummary')"           # [not win]
