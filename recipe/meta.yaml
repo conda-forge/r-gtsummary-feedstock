@@ -55,6 +55,7 @@ test:
     - r-broom.helpers >=1.15.0
     - r-survival
     - r-cardx
+    - r-survey >=4.2
   commands:
     - $R -e "library('gtsummary')"                          # [not win]
     - $R -e "testthat::test_package('gtsummary')"           # [not win]
