@@ -56,6 +56,9 @@ test:
     - r-survival
     - r-cardx
     - r-survey >=4.2
+    - r-smd >=0.6.6
+    - r-car >=3.0-11
+    - r-parameters >=0.20.2
   commands:
     - $R -e "library('gtsummary')"                          # [not win]
     - $R -e "testthat::test_package('gtsummary')"           # [not win]
