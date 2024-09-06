@@ -24,7 +24,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-cards >=0.2.0
+    - r-cards >=0.2.2
     - r-cli >=3.6.1
     - r-dplyr >=1.1.3
     - r-glue >=1.6.2
@@ -35,7 +35,7 @@ requirements:
     - r-vctrs
   run:
     - r-base
-    - r-cards >=0.2.0
+    - r-cards >=0.2.2
     - r-cli >=3.6.1
     - r-dplyr >=1.1.3
     - r-glue >=1.6.2
@@ -50,10 +50,10 @@ test:
     - r-testthat >=3.2.0
     - r-huxtable >=5.4.0
     - r-broom >= 1.0.5
-    - r-broom.helpers >=1.15.0
+    - r-broom.helpers >=1.17.0
     - r-broom.mixed >=0.2.9
     - r-survival
-    - r-cardx
+    - r-cardx >=0.2.1
     - r-survey >=4.2
     - r-smd >=0.6.6
     - r-car >=3.0-11
