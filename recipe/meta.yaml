@@ -1,4 +1,4 @@
-{% set version = "2.0.4" %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gtsummary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gtsummary/gtsummary_{{ version }}.tar.gz
-  sha256: 05c0f6a22df9297a9b271d31bbb8c1d3d4e47f8aacc2bfb869811a4a9da309ee
+  sha256: 1a0120b0364a5842d3d34ae9f159eb0b51adeb8a15e705ae8c80151d10ea4734
 
 build:
   number: 0
