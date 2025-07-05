@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gtsummary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gtsummary/gtsummary_{{ version }}.tar.gz
-  sha256: 4ef4bdefb91e874e39c4ae561e2db72c824972c0c735fd024132190013af8586
+  sha256: 9ade55ee4e12e06a624476a0b65240bba621e96daba9c1526310b97e2c3a7dda
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-cards >=0.6.0
+    - r-cards >=0.6.1
     - r-cli >=3.6.3
     - r-dplyr >=1.1.3
     - r-glue >=1.8.0
@@ -35,7 +35,7 @@ requirements:
     - r-vctrs >=0.6.4
   run:
     - r-base
-    - r-cards >=0.6.0
+    - r-cards >=0.6.1
     - r-cli >=3.6.3
     - r-dplyr >=1.1.3
     - r-glue >=1.8.0
@@ -49,7 +49,7 @@ test:
   requires:
     - r-testthat >=3.2.0
     - r-huxtable >=5.4.0
-    - r-broom >= 1.0.5
+    - r-broom >=1.0.5
     - r-broom.helpers >=1.17.0
     - r-broom.mixed >=0.2.9
     - r-survival >=3.6-4
