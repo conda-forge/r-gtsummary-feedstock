@@ -60,6 +60,7 @@ test:
     - r-broom.mixed >=0.2.9
     - r-survival >=3.6-4
     - r-survey >=4.2
+    - r-smd >=0.6.6
     - r-car >=3.0-11
     - r-parameters >=0.20.2
     - r-emmeans >=1.7.3
